@@ -41,8 +41,8 @@ class Login extends BaseController
             //var_dump();
             //exit();
             return $this->response->setJSON([
-                'kondisi' => false,
-                'pesan' => $this->validator->getErrors()['credential'] ?? $this->validator->getErrors()['password'],
+                'status' => false,
+                'message' => $this->validator->getErrors()['credential'] ?? $this->validator->getErrors()['password'],
                 'csrf_baru' => csrf_hash(),
             ]);
         }
@@ -76,9 +76,9 @@ class Login extends BaseController
             $JumlahKegagalanLogin = $LoginLogModel->where(['ip_address' => $this->request->getIPAddress(), 'is_success' => false, 'login_at >' => $TanggalBerhasilLoginTerakhir])->countAllResults();
 
             return $this->response->setJSON([
-                'kondisi'        => false,
-                'pesan'       => 'Email atau Password Salah !',
-                'jumlah_gagal_login'  => $JumlahKegagalanLogin,
+                'status'        => false,
+                'message'       => 'Email atau Password Salah !',
+                'failed_count'  => $JumlahKegagalanLogin,
                 'csrf_baru' => csrf_hash()
             ]);
         }
@@ -88,8 +88,8 @@ class Login extends BaseController
         $aktif_user = $user['is_aktif'];
         if (!$aktif_user == 1) {
             return $this->response->setJSON([
-                'kondisi' => false,
-                'pesan' => 'Akun Anda tidak aktif. Silakan hubungi administrator.',
+                'status' => false,
+                'message' => 'Akun Anda tidak aktif. Silakan hubungi administrator.',
                 'csrf_baru' => csrf_hash()
             ]);
         }
@@ -117,9 +117,9 @@ class Login extends BaseController
         ]);
         //RETURN UNTUK MENGEMBALIKAN DATA DAN MENGHENTIKAN JALANNYA PROSES
         return $this->response->setJSON([
-            'kondisi' => true,
-            'pesan' => 'Login Berhasil!',
-            // 'redirect_url' => base_url('dashboard'),
+            'status' => true,
+            'message' => 'Login Berhasil!',
+            'redirect_url' => base_url('dashboard'),
             'csrf_baru' => csrf_hash()
         ]);
     }
