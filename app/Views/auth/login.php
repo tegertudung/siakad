@@ -10,11 +10,11 @@
         <div class="card-body login-card-body">
             <p class="login-box-msg">Login untuk melanjutkan proses</p>
 
-
+            <div id="login-error-message" class="alert alert-danger d-none"></div>
             <!-- focus form -->
             <form id="formLogin">
                 <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Email" name="credential">
+                    <input type="text" class="form-control" placeholder="Email atau Username" name="credential">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-envelope"></span>
@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <script>
+    <script <?= csp_script_nonce() ?>>
         BaseUrlJsQ = "<?= base_url(); ?>"
     </script>
     <script src="<?= base_url(); ?>/jsQ/login.js"></script>
