@@ -5,11 +5,9 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-// akses base url,siapapun yang akses baseurl maka diarahkan ke Controller Home fungsi index
-// $routes->get('/', 'Home::index');
-
-// akses base url,siapapun yang akses baseurl maka diarahkan ke Controller Auth fungsi index
-$routes->get('/', 'Auth\Login::index', ['filter' => 'cek_percobaan_login']);
-$routes->post('/trxlogin', 'Auth\Login::eseclogin', ['filter' => 'cek_percobaan_login']);
+//akses baseurl maka diarahkan ke Controller Auth fungsi index
+$routes->get('/', 'Auth\Login::index', ['filter' => 'AntiBruteForce']); //Pintu masuk pertama Pengunjung adalah mengakses aplikasi dengan mengakses baseurl ini ditandai dengan '/' namun sebelum ke controler harus ke filter AntiBruteForce terlebih dahulu
+$routes->post('/trxlogin', 'Auth\Login::eseclogin', ['filter' => 'AntiBruteForce']); //Jika pengunjung mengklik tombol login maka akan diarahkan ke fungsi eseclogin di controller Auth Login namun sebelum ke controler harus ke filter AntiBruteForce terlebih dahulu
 
 $routes->get('/locked', 'Auth\Login::locked');
+$routes->get('/blocked', 'Auth\Login::blocked');

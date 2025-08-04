@@ -9,8 +9,8 @@
     <div class="card">
         <div class="card-body login-card-body">
             <p class="login-box-msg">Login untuk melanjutkan proses</p>
-
-            <div id="login-error-message" class="alert alert-danger d-none"></div>
+            <!-- Idv pesan error defaulnya kita sembunyina dengan menambah kelas d-none ( di bootstrap d-none adalah menyembunyikan) -->
+            <div id="pesan_error" class="alert alert-danger d-none"></div>
             <!-- focus form -->
             <form id="formLogin">
                 <div class="input-group mb-3">
