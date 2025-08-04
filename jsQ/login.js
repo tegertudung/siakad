@@ -33,7 +33,7 @@ function login() {
         window.location.href = response.lempar_ke_url;
         return;
       }
-      //Kalau
+      //Kalau dari filter tidak ada pesan maka lanjut ke tahap 2
       // ===================================================>
       // TAHAP 2
       // MENGATASI RESPONSE DARI CONTROLER==>
