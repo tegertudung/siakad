@@ -12,8 +12,8 @@ use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\PageCache;
 use CodeIgniter\Filters\PerformanceMetrics;
 use CodeIgniter\Filters\SecureHeaders;
-use App\Filters\AntiBruteForce;
-use App\Filters\AntiBypas;
+use App\Filters\BruteForce\AntiBruteForce;
+use App\Filters\BlockView\locked;
 
 class Filters extends BaseFilters
 {
@@ -37,7 +37,7 @@ class Filters extends BaseFilters
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
         'AntiBruteForce' => AntiBruteForce::class,
-        'AntiBypas'     => AntiBypas::class,
+        'blockViewLocked'     => locked::class,
     ];
 
     /**

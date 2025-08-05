@@ -15,12 +15,14 @@ function ButtonExis() {
 
 //FUNGSI LOGIN KITA BUAT UNTUK MELAKUKAN PROSES LOGIN YANG DI TRIGER DENGAN // #1 BUTTON LOGIN
 function login() {
+  var errorDiv = $("#pesan_error");
   //ada penamaan variabel ada Var, Const dan Let (ket cari di google)
   const data = $("#formLogin").serializeArray(); //serializeArray() digunakan untuk mengirim data form ke server dalam bentuk array
   const csrfName = $('meta[name="csrf-token-name"]').attr("content"); //mengambil nama token csrf dari meta tag
   const csrfHash = $('meta[name="csrf-token-hash"]').attr("content"); //mengambil nilai token csrf dari meta tag
   data.push({ name: csrfName, value: csrfHash }); //menambahkan token csrf ke dalam data yang akan dikirim ke server
   //AJAX REQUEST UNTUK MENGIRIM DATA LOGIN KE SERVER
+  errorDiv.addClass("d-none");
   $.ajax({
     url: BaseUrlJsQ + "trxlogin", //URL untuk mengirim data login ke server
     type: "POST", //Metode pengiriman data ke server
@@ -57,7 +59,19 @@ function login() {
       // END
     },
     error: function (jqXHR, textStatus, errorThrown) {
-      printError(jqXHR, textStatus, errorThrown);
+      if (
+        jqXHR.responseText &&
+        (jqXHR.responseText.includes("<!DOCTYPE html>") ||
+          jqXHR.responseText.includes("<html>"))
+      ) {
+        document.open();
+        document.write(jqXHR.responseText);
+        document.close();
+      } else {
+        errorDiv
+          .html("Terjadi kesalahan. Silakan hubungi administrator.")
+          .removeClass("d-none");
+      }
     },
   });
 }

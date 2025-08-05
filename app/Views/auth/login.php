@@ -4,7 +4,7 @@
 
 <div class="login-box">
     <div class="login-logo">
-        <h4>Login Page</h4>
+        <h4>Login Page</h4> <small> <?= session()->get('ses_nama'); ?></small>
     </div>
     <div class="card">
         <div class="card-body login-card-body">

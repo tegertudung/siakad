@@ -36,6 +36,7 @@ class Exceptions extends BaseConfig
     public array $ignoreCodes = [404];
 
     /**
+     
      * --------------------------------------------------------------------------
      * Error Views Path
      * --------------------------------------------------------------------------
@@ -99,8 +100,26 @@ class Exceptions extends BaseConfig
      *          return new \App\Libraries\MyExceptionHandler();
      *      }
      */
+    // public function handler(int $statusCode, Throwable $exception): ExceptionHandlerInterface
+    // {
+    //     return new ExceptionHandler($this);
+    // }
+
     public function handler(int $statusCode, Throwable $exception): ExceptionHandlerInterface
     {
+        if ($statusCode == 403) { // Jika status code adalah 403, kita akan menggunakan custom handler FORBIDDEN CSRF   
+            return new \App\Libraries\Forbidden($this);
+        }
+        if ($statusCode == 400) { // Jika status code adalah 400, kita akan menggunakan custom handler bab_request_400   
+            return new \App\Libraries\bab_request_400($this);
+        }
+        if ($statusCode == 404) { // Jika status code adalah 404, kita akan menggunakan custom handler not_found_404   
+            return new \App\Libraries\not_found_404($this);
+        }
+        if ($statusCode == 500) { // Jika status code adalah 404, kita akan menggunakan custom handler internal_server_error_500   
+            return new \App\Libraries\internal_server_error_500($this);
+        }
+
         return new ExceptionHandler($this);
     }
 }

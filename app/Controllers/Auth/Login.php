@@ -114,7 +114,7 @@ class Login extends BaseController                                              
     public function locked()
     {
         $dataSesi = session()->get('sesi_dataTerkunci'); //Ambil data sesi terkunci dari session yang diset dari filter AntiBruteForce
-        session()->remove('sesi_dataTerkunci'); //Hapus data sesi terkunci dari session agar tidak mengganggu sesi lain
+        session()->remove('sesi_dataTerkunci'); //Hapus data sesi terkunci dari session agar tidak mengganggu sesi lain(agar tidak terkunci terus jika waktu sudah habis)
         $data['pesanPercobaanLogin'] = $dataSesi['pesanTerkunci'] ?? 'Terlalu banyak percobaan login.';
         $data['WaktuTerkunci'] = $dataSesi['WaktuTerkunci'] ?? null;
 
