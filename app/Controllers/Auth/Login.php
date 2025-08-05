@@ -110,7 +110,11 @@ class Login extends BaseController                                              
             'csrf_baru' => csrf_hash()                                                          //Buat Variabel csrf_baru dengan nilai token yang baru dari ci4
         ]);
     }
-
+    public function logout()                                                                    //Public fungsi logout untuk menghapus sesi dan mengembalikan ke halaman login
+    {
+        session()->destroy();                                                                  //Hapus semua sesi yang ada
+        return redirect()->to(base_url('login'));                                              //Kembalikan ke halaman login
+    }
     public function locked()
     {
         $dataSesi = session()->get('sesi_dataTerkunci'); //Ambil data sesi terkunci dari session yang diset dari filter AntiBruteForce
@@ -124,6 +128,7 @@ class Login extends BaseController                                              
     {
         return view('blocked');
     }
+
     // === secutiry ====
     public function antibruteforce() {}
 }

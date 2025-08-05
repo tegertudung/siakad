@@ -12,7 +12,7 @@
             <!-- Idv pesan error defaulnya kita sembunyina dengan menambah kelas d-none ( di bootstrap d-none adalah menyembunyikan) -->
             <div id="pesan_error" class="alert alert-danger d-none"></div>
             <!-- focus form -->
-            <form id="formLogin">
+            <form id="formRegister">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Email atau Username" name="credential">
                     <div class="input-group-append">
