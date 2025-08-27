@@ -6,8 +6,9 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
-    public string $fromEmail  = '';
-    public string $fromName   = '';
+    // ini email saya pribadi bisa diganti sesuai kebutuhan
+    public string $fromEmail  = 'razerpan56@gmail.com';
+    public string $fromName   = 'pendaftaran Digital Talent Award 2025';
     public string $recipients = '';
 
     /**
@@ -18,7 +19,8 @@ class Email extends BaseConfig
     /**
      * The mail sending protocol: mail, sendmail, smtp
      */
-    public string $protocol = 'mail';
+    // menggunakan protokol smtp dari yang sebelumnya protokol mail
+    public string $protocol = 'smtp';
 
     /**
      * The server path to Sendmail.
@@ -28,27 +30,30 @@ class Email extends BaseConfig
     /**
      * SMTP Server Hostname
      */
-    public string $SMTPHost = '';
+    public string $SMTPHost = 'smtp.gmail.com';
 
     /**
      * SMTP Username
      */
-    public string $SMTPUser = '';
+    // ini email saya pribadi bisa diganti sesuai kebutuhan
+    public string $SMTPUser = 'razerpan56@gmail.com';
 
     /**
      * SMTP Password
      */
-    public string $SMTPPass = '';
+    // ini adalah app password untuk email saya
+    // untuk cara mendapatkannya yaitu masuk ke google->keamanan->verifikasi 2 langkah->lalu search "sandi aplikasi"
+    public string $SMTPPass = 'gipa rjag pktb iomw';
 
     /**
      * SMTP Port
      */
-    public int $SMTPPort = 25;
+    public int $SMTPPort = 587;
 
     /**
      * SMTP Timeout (in seconds)
      */
-    public int $SMTPTimeout = 5;
+    public int $SMTPTimeout = 60;
 
     /**
      * Enable persistent SMTP connections
@@ -77,7 +82,7 @@ class Email extends BaseConfig
     /**
      * Type of mail, either 'text' or 'html'
      */
-    public string $mailType = 'text';
+    public string $mailType = 'html';
 
     /**
      * Character set (utf-8, iso-8859-1, etc.)

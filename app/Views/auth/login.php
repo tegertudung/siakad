@@ -9,6 +9,14 @@
     <div class="card">
         <div class="card-body login-card-body">
             <p class="login-box-msg">Login untuk melanjutkan proses</p>
+            
+            <!-- Pesan sukses registrasi -->
+            <?php if (session()->getFlashdata('success')): ?>
+            <div class="alert alert-success">
+                <?= session()->getFlashdata('success') ?>
+            </div>
+            <?php endif; ?>
+            
             <!-- Idv pesan error defaulnya kita sembunyina dengan menambah kelas d-none ( di bootstrap d-none adalah menyembunyikan) -->
             <div id="pesan_error" class="alert alert-danger d-none"></div>
             <!-- focus form -->
@@ -36,6 +44,9 @@
                 <div class="col-4">
                     <button type="button" class="btn btn-primary btn-block" id="loginbtn">Masuk</button>
                 </div>
+            </div>
+            <div class="mt-3 text-center">
+                <p>Belum punya akun? <a href="<?= site_url('register') ?>">Daftar di sini</a></p>
             </div>
         </div>
     </div>

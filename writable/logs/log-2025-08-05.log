@@ -1,348 +1,174 @@
-DEBUG - 2025-08-05 01:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 01:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 01:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2025-08-05 02:06:10 --> CSRF token verified.
-INFO - 2025-08-05 02:06:12 --> CSRF token verified.
-INFO - 2025-08-05 02:06:13 --> CSRF token verified.
-INFO - 2025-08-05 02:06:14 --> CSRF token verified.
-INFO - 2025-08-05 02:06:15 --> CSRF token verified.
-INFO - 2025-08-05 02:06:16 --> CSRF token verified.
-DEBUG - 2025-08-05 02:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2025-08-05 02:13:08 --> CSRF token verified.
-DEBUG - 2025-08-05 02:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2025-08-05 02:14:06 --> CSRF token verified.
-INFO - 2025-08-05 02:14:08 --> CSRF token verified.
-INFO - 2025-08-05 02:14:09 --> CSRF token verified.
-INFO - 2025-08-05 02:14:10 --> CSRF token verified.
-INFO - 2025-08-05 02:14:11 --> CSRF token verified.
-DEBUG - 2025-08-05 02:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:26:57 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 02:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:27:46 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 02:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:32:07 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 02:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:32:57 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 02:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:33:23 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 02:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:33:38 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 02:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 02:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:38:27 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 02:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:55:24 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-CRITICAL - 2025-08-05 02:55:24 --> ErrorException: Uncaught Error: Call to undefined method App\Libraries\CustomExceptionHandler::extend() in E:\XAMPP8\htdocs\manajemenuser2\app\Views\errors\forbidden_page.php:1
+
+                                                             ^
+HINT:  You will need to rewrite or cast the expression. in C:\xampp\htdocs\manajemenuser\system\Database\Postgre\Connection.php:206
 Stack trace:
-#0 E:\XAMPP8\htdocs\manajemenuser2\system\Debug\BaseExceptionHandler.php(266): include()
-#1 E:\XAMPP8\htdocs\manajemenuser2\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
-#2 E:\XAMPP8\htdocs\manajemenuser2\app\Libraries\CustomExceptionHandler.php(24): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Security\Exceptions\SecurityException), 403, 'E:\\XAMPP8\\htdoc...')
-#3 E:\XAMPP8\htdocs\manajemenuser2\system\Debug\Exceptions.php(162): App\Libraries\CustomExceptionHandler->handle(Object(CodeIgniter\Security\Exceptions\SecurityException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 403, 1)
-#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
-#5 {main}
-  thrown
-【Previous Exception】
-CodeIgniter\Security\Exceptions\SecurityException
-The action you requested is not allowed.
-#0 E:\XAMPP8\htdocs\manajemenuser2\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
-#1 E:\XAMPP8\htdocs\manajemenuser2\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
-#2 E:\XAMPP8\htdocs\manajemenuser2\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
-#3 E:\XAMPP8\htdocs\manajemenuser2\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
-#4 E:\XAMPP8\htdocs\manajemenuser2\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
-#5 E:\XAMPP8\htdocs\manajemenuser2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#6 E:\XAMPP8\htdocs\manajemenuser2\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
-#7 E:\XAMPP8\htdocs\manajemenuser2\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
-#8 E:\XAMPP8\htdocs\manajemenuser2\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-#9 {main}
-[Method: POST, Route: trxlogin]
-in APPPATH\Views\errors\forbidden_page.php on line 1.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
-DEBUG - 2025-08-05 02:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:57:11 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-CRITICAL - 2025-08-05 02:57:11 --> ErrorException: Uncaught Error: Call to undefined method App\Libraries\CustomExceptionHandler::extend() in E:\XAMPP8\htdocs\manajemenuser2\app\Views\errors\forbidden_page.php:1
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 206)
+#1 C:\xampp\htdocs\manajemenuser\system\Database\Postgre\Connection.php(206): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\manajemenuser\system\Database\BaseConnection.php(738): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\manajemenuser\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\manajemenuser\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\manajemenuser\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\manajemenuser\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\manajemenuser\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\manajemenuser\app\Controllers\Auth\Register.php(159): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\manajemenuser\system\CodeIgniter.php(933): App\Controllers\Auth\Register->verify()
+#10 C:\xampp\htdocs\manajemenuser\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Register))
+#11 C:\xampp\htdocs\manajemenuser\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\manajemenuser\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\manajemenuser\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\manajemenuser\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-08-05 15:47:09 --> Exception during user creation: pg_query(): Query failed: ERROR:  column &quot;is_active&quot; is of type boolean but expression is of type integer
+LINE 1: ...5G0a15w0/au1vxSe3K.kJoBxF4cdawsaCpdQHjnYh9ZQ1ni', 1, 1, '202...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+INFO - 2025-08-05 15:47:48 --> === VERIFY METHOD ACCESSED ===
+INFO - 2025-08-05 15:47:48 --> Request method: GET
+INFO - 2025-08-05 15:47:48 --> Request URI: http://localhost/manajemenuser/index.php/register/verify
+INFO - 2025-08-05 15:47:48 --> POST data: []
+DEBUG - 2025-08-05 15:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:47:48 --> Register data from session: {"email":"egasurya23@gmail.com","username":"egaaa","nama_lengkap":"ega surya","password":"$2y$10$G1ZrwG5G0a15w0\/au1vxSe3K.kJoBxF4cdawsaCpdQHjnYh9ZQ1ni"}
+INFO - 2025-08-05 15:47:48 --> Displaying OTP verification form
+INFO - 2025-08-05 15:47:50 --> === VERIFY METHOD ACCESSED ===
+INFO - 2025-08-05 15:47:50 --> Request method: GET
+INFO - 2025-08-05 15:47:50 --> Request URI: http://localhost/manajemenuser/index.php/register/verify
+INFO - 2025-08-05 15:47:50 --> POST data: []
+DEBUG - 2025-08-05 15:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:47:50 --> Register data from session: {"email":"egasurya23@gmail.com","username":"egaaa","nama_lengkap":"ega surya","password":"$2y$10$G1ZrwG5G0a15w0\/au1vxSe3K.kJoBxF4cdawsaCpdQHjnYh9ZQ1ni"}
+INFO - 2025-08-05 15:47:50 --> Displaying OTP verification form
+DEBUG - 2025-08-05 15:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:48:00 --> CSRF token verified.
+DEBUG - 2025-08-05 15:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:48:00 --> === VERIFY METHOD ACCESSED ===
+INFO - 2025-08-05 15:48:00 --> Request method: GET
+INFO - 2025-08-05 15:48:00 --> Request URI: http://localhost/manajemenuser/index.php/register/verify
+INFO - 2025-08-05 15:48:00 --> POST data: []
+DEBUG - 2025-08-05 15:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:48:00 --> Register data from session: {"email":"egasurya23@gmail.com","username":"egaaa","nama_lengkap":"ega surya","password":"$2y$10$q.f3hrotqOupzl1gywMCwORRiSoP36wTSE.iR586vjUHs8R8wl7NC"}
+INFO - 2025-08-05 15:48:00 --> Displaying OTP verification form
+INFO - 2025-08-05 15:48:06 --> CSRF token verified.
+INFO - 2025-08-05 15:48:06 --> === VERIFY METHOD ACCESSED ===
+INFO - 2025-08-05 15:48:06 --> Request method: POST
+INFO - 2025-08-05 15:48:06 --> Request URI: http://localhost/manajemenuser/index.php/register/verify
+INFO - 2025-08-05 15:48:06 --> POST data: {"otp":"771452"}
+DEBUG - 2025-08-05 15:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:48:06 --> Register data from session: {"email":"egasurya23@gmail.com","username":"egaaa","nama_lengkap":"ega surya","password":"$2y$10$q.f3hrotqOupzl1gywMCwORRiSoP36wTSE.iR586vjUHs8R8wl7NC"}
+INFO - 2025-08-05 15:48:06 --> POST request detected for OTP verification
+INFO - 2025-08-05 15:48:06 --> OTP verification attempt for email: egasurya23@gmail.com with OTP: 771452
+INFO - 2025-08-05 15:48:06 --> All OTP records for email egasurya23@gmail.com: [{"id":"2","email":"egasurya23@gmail.com","otp":"884495","expires_at":"2025-08-05 14:12:30","created_at":"2025-08-05 21:02:30.887723"},{"id":"3","email":"egasurya23@gmail.com","otp":"225690","expires_at":"2025-08-05 14:13:17","created_at":"2025-08-05 21:03:17.008002"},{"id":"4","email":"egasurya23@gmail.com","otp":"428034","expires_at":"2025-08-05 15:43:29","created_at":"2025-08-05 22:33:29.32986"},{"id":"5","email":"egasurya23@gmail.com","otp":"441388","expires_at":"2025-08-05 15:50:29","created_at":"2025-08-05 22:40:29.522792"},{"id":"6","email":"egasurya23@gmail.com","otp":"981899","expires_at":"2025-08-05 15:54:28","created_at":"2025-08-05 22:44:28.410236"},{"id":"7","email":"egasurya23@gmail.com","otp":"536449","expires_at":"2025-08-05 15:57:03","created_at":"2025-08-05 22:47:03.85943"},{"id":"8","email":"egasurya23@gmail.com","otp":"771452","expires_at":"2025-08-05 15:58:00","created_at":"2025-08-05 22:48:00.571011"}]
+INFO - 2025-08-05 15:48:06 --> OTP record found: {"id":"8","email":"egasurya23@gmail.com","otp":"771452","expires_at":"2025-08-05 15:58:00","created_at":"2025-08-05 22:48:00.571011"}
+INFO - 2025-08-05 15:48:06 --> Users table fields: []
+INFO - 2025-08-05 15:48:06 --> Attempting to insert user data: {"email":"egasurya23@gmail.com","username":"egaaa","nama_lengkap":"ega surya","password_hash":"$2y$10$q.f3hrotqOupzl1gywMCwORRiSoP36wTSE.iR586vjUHs8R8wl7NC","is_active":true,"is_aktif":true}
+ERROR - 2025-08-05 15:48:06 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;is_aktif&quot; is of type smallint but expression is of type boolean
+LINE 1: ...zl1gywMCwORRiSoP36wTSE.iR586vjUHs8R8wl7NC', TRUE, TRUE, '202...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression. in C:\xampp\htdocs\manajemenuser\system\Database\Postgre\Connection.php:206
 Stack trace:
-#0 E:\XAMPP8\htdocs\manajemenuser2\system\Debug\BaseExceptionHandler.php(266): include()
-#1 E:\XAMPP8\htdocs\manajemenuser2\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
-#2 E:\XAMPP8\htdocs\manajemenuser2\app\Libraries\CustomExceptionHandler.php(24): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Security\Exceptions\SecurityException), 403, 'E:\\XAMPP8\\htdoc...')
-#3 E:\XAMPP8\htdocs\manajemenuser2\system\Debug\Exceptions.php(162): App\Libraries\CustomExceptionHandler->handle(Object(CodeIgniter\Security\Exceptions\SecurityException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 403, 1)
-#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Security\Exceptions\SecurityException))
-#5 {main}
-  thrown
-【Previous Exception】
-CodeIgniter\Security\Exceptions\SecurityException
-The action you requested is not allowed.
-#0 E:\XAMPP8\htdocs\manajemenuser2\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
-#1 E:\XAMPP8\htdocs\manajemenuser2\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
-#2 E:\XAMPP8\htdocs\manajemenuser2\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
-#3 E:\XAMPP8\htdocs\manajemenuser2\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
-#4 E:\XAMPP8\htdocs\manajemenuser2\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
-#5 E:\XAMPP8\htdocs\manajemenuser2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#6 E:\XAMPP8\htdocs\manajemenuser2\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
-#7 E:\XAMPP8\htdocs\manajemenuser2\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
-#8 E:\XAMPP8\htdocs\manajemenuser2\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-#9 {main}
-[Method: POST, Route: trxlogin]
-in APPPATH\Views\errors\forbidden_page.php on line 1.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
-DEBUG - 2025-08-05 02:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 02:58:56 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 03:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 03:01:14 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 03:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 03:06:42 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 03:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 03:10:57 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 03:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 03:11:11 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 03:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 03:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 03:12:24 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 03:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 03:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2025-08-05 03:12:52 --> CSRF token verified.
-CRITICAL - 2025-08-05 03:12:57 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 03:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 03:15:01 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-CRITICAL - 2025-08-05 03:17:14 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-CRITICAL - 2025-08-05 03:17:54 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
-[Method: POST, Route: trxlogin]
-in SYSTEMPATH\Security\Security.php on line 262.
- 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
- 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
- 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('trxlogin', 'before')
- 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-DEBUG - 2025-08-05 06:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 06:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-08-05 06:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2025-08-05 06:54:31 --> ErrorException: A void function must not return a value
-【Previous Exception】
-CodeIgniter\Exceptions\PageNotFoundException
-Can't find a route for 'GET: fdsfadsf'.
-#0 E:\XAMPP8\htdocs\manajemenuser2\system\CodeIgniter.php(983): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Can't find a ro...')
-#1 E:\XAMPP8\htdocs\manajemenuser2\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
-#2 E:\XAMPP8\htdocs\manajemenuser2\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
-#3 E:\XAMPP8\htdocs\manajemenuser2\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
-#4 E:\XAMPP8\htdocs\manajemenuser2\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-#5 {main}
-[Method: GET, Route: fdsfadsf]
-in APPPATH\Libraries\not_found_404.php on line 20.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 206)
+#1 C:\xampp\htdocs\manajemenuser\system\Database\Postgre\Connection.php(206): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\manajemenuser\system\Database\BaseConnection.php(738): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\manajemenuser\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\manajemenuser\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\manajemenuser\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\manajemenuser\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\manajemenuser\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\manajemenuser\app\Controllers\Auth\Register.php(159): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\manajemenuser\system\CodeIgniter.php(933): App\Controllers\Auth\Register->verify()
+#10 C:\xampp\htdocs\manajemenuser\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Register))
+#11 C:\xampp\htdocs\manajemenuser\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\manajemenuser\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\manajemenuser\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\manajemenuser\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-08-05 15:48:06 --> Exception during user creation: pg_query(): Query failed: ERROR:  column &quot;is_aktif&quot; is of type smallint but expression is of type boolean
+LINE 1: ...zl1gywMCwORRiSoP36wTSE.iR586vjUHs8R8wl7NC', TRUE, TRUE, '202...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+INFO - 2025-08-05 15:49:59 --> === VERIFY METHOD ACCESSED ===
+INFO - 2025-08-05 15:49:59 --> Request method: GET
+INFO - 2025-08-05 15:49:59 --> Request URI: http://localhost/manajemenuser/index.php/register/verify
+INFO - 2025-08-05 15:49:59 --> POST data: []
+DEBUG - 2025-08-05 15:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:49:59 --> Register data from session: {"email":"egasurya23@gmail.com","username":"egaaa","nama_lengkap":"ega surya","password":"$2y$10$q.f3hrotqOupzl1gywMCwORRiSoP36wTSE.iR586vjUHs8R8wl7NC"}
+INFO - 2025-08-05 15:49:59 --> Displaying OTP verification form
+DEBUG - 2025-08-05 15:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-05 15:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:50:07 --> CSRF token verified.
+CRITICAL - 2025-08-05 15:50:07 --> CodeIgniter\Exceptions\InvalidArgumentException: "auth" is not a valid database connection group.
+[Method: POST, Route: register/send]
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Validation\Rules.php(210): CodeIgniter\Database\Config::connect('auth')
+ 2 SYSTEMPATH\Validation\Rules.php(165): CodeIgniter\Validation\Rules->prepareUniqueQuery('egasurya23@gmail.com', 'email', [...])
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('egasurya23@gmail.com', 'auth.users.email', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('egasurya23@gmail.com', 'auth.users.email', [...], null, 'credential')
+ 5 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('credential', 'credential', 'egasurya23@gmail.com', [...], [...], 'credential')
+ 6 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth\Register.php(30): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth\Register->send()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Register))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-08-05 15:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:52:04 --> CSRF token verified.
+DEBUG - 2025-08-05 15:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:52:04 --> === VERIFY METHOD ACCESSED ===
+INFO - 2025-08-05 15:52:04 --> Request method: GET
+INFO - 2025-08-05 15:52:04 --> Request URI: http://localhost/manajemenuser/index.php/register/verify
+INFO - 2025-08-05 15:52:04 --> POST data: []
+DEBUG - 2025-08-05 15:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:52:04 --> Register data from session: {"email":"surya@gmail.com","username":"surya","nama_lengkap":"suryaaaaa","password":"$2y$10$mpJLD7ER441KFC.N49TmH.uJ3zF8hXrhtm\/qCvVlHl9hfv7BXahmi"}
+INFO - 2025-08-05 15:52:04 --> Displaying OTP verification form
+INFO - 2025-08-05 15:52:11 --> CSRF token verified.
+INFO - 2025-08-05 15:52:11 --> === VERIFY METHOD ACCESSED ===
+INFO - 2025-08-05 15:52:11 --> Request method: POST
+INFO - 2025-08-05 15:52:11 --> Request URI: http://localhost/manajemenuser/index.php/register/verify
+INFO - 2025-08-05 15:52:11 --> POST data: {"otp":"536878"}
+DEBUG - 2025-08-05 15:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:52:11 --> Register data from session: {"email":"surya@gmail.com","username":"surya","nama_lengkap":"suryaaaaa","password":"$2y$10$mpJLD7ER441KFC.N49TmH.uJ3zF8hXrhtm\/qCvVlHl9hfv7BXahmi"}
+INFO - 2025-08-05 15:52:11 --> POST request detected for OTP verification
+INFO - 2025-08-05 15:52:11 --> OTP verification attempt for email: surya@gmail.com with OTP: 536878
+INFO - 2025-08-05 15:52:11 --> All OTP records for email surya@gmail.com: [{"id":"9","email":"surya@gmail.com","otp":"536878","expires_at":"2025-08-05 16:02:04","created_at":"2025-08-05 22:52:04.242439"}]
+INFO - 2025-08-05 15:52:11 --> OTP record found: {"id":"9","email":"surya@gmail.com","otp":"536878","expires_at":"2025-08-05 16:02:04","created_at":"2025-08-05 22:52:04.242439"}
+INFO - 2025-08-05 15:52:11 --> Database connection successful
+INFO - 2025-08-05 15:52:11 --> Database name: manajemenuser_db
+INFO - 2025-08-05 15:52:11 --> Users table fields: []
+INFO - 2025-08-05 15:52:11 --> Attempting to insert user data: {"email":"surya@gmail.com","username":"surya","nama_lengkap":"suryaaaaa","password_hash":"$2y$10$mpJLD7ER441KFC.N49TmH.uJ3zF8hXrhtm\/qCvVlHl9hfv7BXahmi","is_active":true,"is_aktif":1}
+INFO - 2025-08-05 15:52:11 --> User successfully created with ID: 3
+DEBUG - 2025-08-05 15:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-05 15:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-05 15:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-05 15:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-05 15:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:55:23 --> CSRF token verified.
+DEBUG - 2025-08-05 15:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:55:23 --> === VERIFY METHOD ACCESSED ===
+INFO - 2025-08-05 15:55:23 --> Request method: GET
+INFO - 2025-08-05 15:55:23 --> Request URI: http://localhost/manajemenuser/index.php/register/verify
+INFO - 2025-08-05 15:55:23 --> POST data: []
+DEBUG - 2025-08-05 15:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:55:23 --> Register data from session: {"email":"tes@gmail.com","username":"tesss","nama_lengkap":"tes ega","password":"$2y$10$YPtI7cXa6Nd4ecjC\/kJ1a.XwwASnkQAv2oDdwpUlwOvjjyPGpXVOS"}
+INFO - 2025-08-05 15:55:23 --> Displaying OTP verification form
+INFO - 2025-08-05 15:55:30 --> CSRF token verified.
+INFO - 2025-08-05 15:55:30 --> === VERIFY METHOD ACCESSED ===
+INFO - 2025-08-05 15:55:30 --> Request method: POST
+INFO - 2025-08-05 15:55:30 --> Request URI: http://localhost/manajemenuser/index.php/register/verify
+INFO - 2025-08-05 15:55:30 --> POST data: {"otp":"511418"}
+DEBUG - 2025-08-05 15:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:55:30 --> Register data from session: {"email":"tes@gmail.com","username":"tesss","nama_lengkap":"tes ega","password":"$2y$10$YPtI7cXa6Nd4ecjC\/kJ1a.XwwASnkQAv2oDdwpUlwOvjjyPGpXVOS"}
+INFO - 2025-08-05 15:55:30 --> POST request detected for OTP verification
+INFO - 2025-08-05 15:55:30 --> OTP verification attempt for email: tes@gmail.com with OTP: 511418
+INFO - 2025-08-05 15:55:30 --> All OTP records for email tes@gmail.com: [{"id":"10","email":"tes@gmail.com","otp":"511418","expires_at":"2025-08-05 16:05:23","created_at":"2025-08-05 22:55:23.530058"}]
+INFO - 2025-08-05 15:55:30 --> OTP record found: {"id":"10","email":"tes@gmail.com","otp":"511418","expires_at":"2025-08-05 16:05:23","created_at":"2025-08-05 22:55:23.530058"}
+INFO - 2025-08-05 15:55:30 --> Database connection successful
+INFO - 2025-08-05 15:55:30 --> Database name: manajemenuser_db
+INFO - 2025-08-05 15:55:30 --> Users table fields: []
+INFO - 2025-08-05 15:55:30 --> Attempting to insert user data: {"email":"tes@gmail.com","username":"tesss","nama_lengkap":"tes ega","password_hash":"$2y$10$YPtI7cXa6Nd4ecjC\/kJ1a.XwwASnkQAv2oDdwpUlwOvjjyPGpXVOS","is_active":true,"is_aktif":1}
+INFO - 2025-08-05 15:55:30 --> User successfully created with ID: 4
+DEBUG - 2025-08-05 15:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-05 15:55:43 --> CSRF token verified.
+INFO - 2025-08-05 15:55:50 --> CSRF token verified.
+INFO - 2025-08-05 15:56:01 --> CSRF token verified.
+INFO - 2025-08-05 15:56:13 --> CSRF token verified.
+DEBUG - 2025-08-05 15:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

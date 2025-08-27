@@ -32,7 +32,7 @@ function login() {
       // TAHAP 1
       //MENGATASI RESPONSE DARI FILTER==>
       if (response.Pesan_kirimke_ajax) {
-        window.location.href = response.lempar_ke_url;
+        window.location.href = "/dashboard"; //arahkan ke dashboard alias login berhasil
         return;
       }
       //Kalau dari filter tidak ada pesan maka lanjut ke tahap 2
