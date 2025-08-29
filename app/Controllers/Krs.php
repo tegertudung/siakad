@@ -22,6 +22,25 @@ class Krs extends BaseController
         
         $ta_aktif = $taModel->where('status', 1)->first();
 
+        $matakuliahTersedia = [];
+        if ($ta_aktif) {
+            // Tentukan jenis semester (Ganjil/Genap) dari tahun akademik
+            // Contoh: 20251 -> Ganjil, 20252 -> Genap
+            $jenisSemester = (int)substr($ta_aktif['tahun_akademik'], -1) % 2;
+
+            if ($jenisSemester == 1) { // Ganjil
+                $semesterDitawarkan = [1, 3, 5, 7];
+            } else { // Genap
+                $semesterDitawarkan = [2, 4, 6, 8];
+            }
+
+            // Ambil mata kuliah yang sesuai dengan jurusan dan semester yang ditawarkan
+            $matakuliahTersedia = $matakuliahModel
+                ->where('jurusan_id', $mahasiswa['jurusan_id'])
+                ->whereIn('semester', $semesterDitawarkan)
+                ->findAll();
+        }
+
         // Ambil ID mata kuliah yang sudah diambil di semester ini
         $matakuliahSudahDiambil = [];
         if ($ta_aktif) {
@@ -35,7 +54,7 @@ class Krs extends BaseController
             'title'      => 'Kartu Rencana Studi (KRS)',
             'ta_aktif'   => $ta_aktif,
             'mahasiswa'  => $mahasiswa,
-            'matakuliah' => $matakuliahModel->where('jurusan_id', $mahasiswa['jurusan_id'])->findAll(),
+            'matakuliah' => $matakuliahTersedia,
             'matakuliah_sudah_diambil' => $matakuliahSudahDiambil
         ];
 
@@ -49,10 +68,12 @@ class Krs extends BaseController
         $mahasiswa_id = $this->request->getPost('mahasiswa_id');
         $tahun_akademik = $this->request->getPost('tahun_akademik');
 
-        // Hapus KRS lama di semester ini
-        $krsModel->where('mahasiswa_id', $mahasiswa_id)
-                 ->where('tahun_akademik', $tahun_akademik)
-                 ->delete();
+        // Hapus KRS lama di semester ini (jika ada)
+        if (!empty($mahasiswa_id) && !empty($tahun_akademik)) {
+            $krsModel->where('mahasiswa_id', $mahasiswa_id)
+                     ->where('tahun_akademik', $tahun_akademik)
+                     ->delete();
+        }
 
         // Simpan KRS yang baru jika ada mata kuliah yang dipilih
         if (!empty($matakuliah_ids)) {

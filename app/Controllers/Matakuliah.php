@@ -4,22 +4,37 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\MataKuliahModel;
-use App\Models\JurusanModel; // <-- Panggil JurusanModel
+use App\Models\JurusanModel;
 
 class MataKuliah extends BaseController
 {
     public function index()
     {
-        $model = new MataKuliahModel();
-        
-        // Query untuk join tabel mata_kuliah dengan jurusan
-        $query = $model->select('mata_kuliah.*, jurusan.nama_jurusan')
-                       ->join('jurusan', 'jurusan.id = mata_kuliah.jurusan_id', 'left') // 'left' join agar matkul tanpa jurusan tetap tampil
-                       ->findAll();
+        $jurusanModel = new JurusanModel();
+        $mataKuliahModel = new MataKuliahModel();
+
+        $jurusan = $jurusanModel->findAll();
+        $grouped_matakuliah = [];
+
+        foreach ($jurusan as $jrs) {
+            $matakuliah = $mataKuliahModel->where('jurusan_id', $jrs['id'])
+                                          ->orderBy('semester', 'ASC')
+                                          ->findAll();
+            
+            // Kelompokkan mata kuliah berdasarkan semester
+            $by_semester = [];
+            foreach ($matakuliah as $mk) {
+                $by_semester[$mk['semester']][] = $mk;
+            }
+
+            if (!empty($by_semester)) {
+                $grouped_matakuliah[$jrs['nama_jurusan']] = $by_semester;
+            }
+        }
 
         $data = [
             'title'      => 'Data Mata Kuliah',
-            'matakuliah' => $query
+            'matakuliah_per_jurusan' => $grouped_matakuliah
         ];
         return view('matakuliah/index', $data);
     }
@@ -29,7 +44,7 @@ class MataKuliah extends BaseController
         $jurusanModel = new JurusanModel();
         $data = [
             'title'   => 'Tambah Data Mata Kuliah',
-            'jurusan' => $jurusanModel->findAll() // Ambil data jurusan
+            'jurusan' => $jurusanModel->findAll()
         ];
         return view('matakuliah/new', $data);
     }
@@ -42,6 +57,7 @@ class MataKuliah extends BaseController
             'kode_mk'    => $this->request->getPost('kode_mk'),
             'nama_mk'    => $this->request->getPost('nama_mk'),
             'sks'        => $this->request->getPost('sks'),
+            'semester'   => $this->request->getPost('semester'),
         ];
 
         $model->save($data);
@@ -68,6 +84,7 @@ class MataKuliah extends BaseController
             'kode_mk'    => $this->request->getPost('kode_mk'),
             'nama_mk'    => $this->request->getPost('nama_mk'),
             'sks'        => $this->request->getPost('sks'),
+            'semester'   => $this->request->getPost('semester'),
         ];
 
         $model->update($id, $data);

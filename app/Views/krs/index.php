@@ -11,7 +11,7 @@
                     <h3 class="card-title">Semester Aktif: <?= esc($ta_aktif['nama_semester'] ?? 'Periode KRS Belum Dibuka'); ?></h3>
                 </div>
                 
-                <?php if ($ta_aktif): ?>
+                <?php if ($ta_aktif): // Hanya tampilkan form jika ada semester aktif ?>
                 <form action="<?= base_url('krs/save'); ?>" method="post">
                 <?= csrf_field(); ?>
                 <input type="hidden" name="mahasiswa_id" value="<?= $mahasiswa['id']; ?>">
@@ -27,17 +27,17 @@
                                 <th>Kode MK</th>
                                 <th>Mata Kuliah</th>
                                 <th>SKS</th>
+                                <th>Semester</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($matakuliah as $mk) : ?>
                                 <tr>
-                                    <td class="text-center">
-                                        <input type="checkbox" name="matakuliah_ids[]" value="<?= $mk['id']; ?>" <?= in_array($mk['id'], $matakuliah_sudah_diambil) ? 'checked' : '' ?>>
-                                    </td>
+                                    <td class="text-center"><input type="checkbox" name="matakuliah_ids[]" value="<?= $mk['id']; ?>" <?= in_array($mk['id'], $matakuliah_sudah_diambil) ? 'checked' : '' ?>></td>
                                     <td><?= esc($mk['kode_mk']); ?></td>
                                     <td><?= esc($mk['nama_mk']); ?></td>
                                     <td><?= esc($mk['sks']); ?></td>
+                                    <td><?= esc($mk['semester']); ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

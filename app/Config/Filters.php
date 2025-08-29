@@ -38,7 +38,7 @@ class Filters extends BaseFilters
         'performance'   => PerformanceMetrics::class,
         'AntiBruteForce' => AntiBruteForce::class,
         'blockViewLocked'     => locked::class,
-        'auth'     => AuthFilter::class, 
+        'auth'          => \App\Filters\Auth\AuthFilter::class,
     ];
 
     /**

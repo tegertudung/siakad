@@ -112,7 +112,20 @@
         <!-- MENU UNTUK DOSEN -->
         <!-- =================================================== -->
         <?php if (session()->get('ses_role') == 'dosen') : ?>
-            <!-- Tambahkan menu khusus untuk dosen di sini -->
+            <li class="nav-header">MENU UTAMA</li>
+            <li class="nav-item">
+                <a href="<?= base_url('dashboard'); ?>" class="nav-link">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li class="nav-header">AKADEMIK</li>
+            <li class="nav-item">
+                <a href="<?= base_url('nilai'); ?>" class="nav-link">
+                    <i class="nav-icon fas fa-edit"></i>
+                    <p>Input Nilai</p>
+                </a>
+            </li>
         <?php endif; ?>
 
       </ul>

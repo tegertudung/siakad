@@ -37,6 +37,15 @@
                             <label for="sks">Jumlah SKS</label>
                             <input type="number" class="form-control" id="sks" name="sks" value="<?= esc($matakuliah['sks']); ?>" required>
                         </div>
+                        <div class="form-group">
+                            <label for="semester">Semester</label>
+                            <select name="semester" id="semester" class="form-control" required>
+                                <option value="">-- Pilih Semester --</option>
+                                <?php for($i = 1; $i <= 8; $i++): ?>
+                                    <option value="<?= $i; ?>" <?= ($matakuliah['semester'] == $i) ? 'selected' : ''; ?>>Semester <?= $i; ?></option>
+                                <?php endfor; ?>
+                            </select>
+                        </div>
                     </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Update</button>

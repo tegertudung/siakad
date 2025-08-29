@@ -56,3 +56,6 @@ $routes->get('/khs', 'Khs::index', ['filter' => 'auth']);
 $routes->get('/krs', 'Krs::index', ['filter' => 'auth']);
 $routes->post('/krs/save', 'Krs::save', ['filter' => 'auth']);
 
+$routes->get('/nilai', 'Nilai::index', ['filter' => 'auth']);
+$routes->get('/nilai/detail/(:num)', 'Nilai::detail/$1', ['filter' => 'auth']);
+$routes->post('/nilai/save', 'Nilai::save', ['filter' => 'auth']);

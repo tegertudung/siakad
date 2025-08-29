@@ -15,29 +15,31 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8">
-                <div class="card card-primary card-outline">
-                    <div class="card-header">
-                        <h3 class="card-title">
-                        <i class="fas fa-bullhorn"></i>
-                        Pengumuman Akademik
-                        </h3>
-                    </div>
+            <!-- Pesan Selamat Datang -->
+            <div class="col-12">
+                <div class="card">
                     <div class="card-body">
-                        <div class="alert alert-info alert-dismissible">
-                            <h5><i class="icon fas fa-info"></i> Jadwal Pengisian KRS!</h5>
-                            Pengisian Kartu Rencana Studi (KRS) untuk semester Ganjil 2024/2025 akan dibuka mulai tanggal 1 s/d 15 September 2024.
-                        </div>
-                        <p>Selamat datang di Sistem Informasi Akademik. Pastikan Anda selalu memeriksa pengumuman terbaru di halaman ini.</p>
+                        <h4>Selamat Datang, <?= esc(session()->get('ses_nama')); ?>!</h4>
+                        <p>Selamat datang di situs SIAKAD (Sistem Informasi Akademik). Sistem ini berisi informasi yang perlu diketahui terkait proses akademik Anda.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="info-box">
-                    <span class="info-box-icon bg-success"><i class="far fa-star"></i></span>
-                    <div class="info-box-content">
-                        <span class="info-box-text">IPK Saat Ini</span>
-                        <span class="info-box-number">3.75</span>
+
+            <!-- GRAFIK NILAI -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Indeks Prestasi Semester</h3>
+                        <div class="card-tools">
+                            <a href="<?= base_url('khs'); ?>" class="btn btn-tool btn-sm">
+                                <i class="fas fa-download"></i> Lihat Semua
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart">
+                            <canvas id="ipsChart" style="min-height: 250px; height: 300px; max-height: 300px; max-width: 100%;"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,4 +47,68 @@
       </div>
     </section>
 </div>
+<?= $this->endSection(); ?>
+
+<?= $this->section('pageScripts'); ?>
+<!-- Tambahkan ChartJS -->
+<script src="<?= base_url(); ?>/dokumen/AdminLTE3/plugins/chart.js/Chart.min.js"></script>
+<script>
+$(function () {
+    var ipsChartCanvas = $('#ipsChart').get(0).getContext('2d')
+
+    var ipsChartData = {
+      labels  : <?= $chart_labels; ?>,
+      datasets: [
+        {
+          label               : 'IPS',
+          backgroundColor     : 'rgba(210, 214, 222, 1)',
+          borderColor         : 'rgba(210, 214, 222, 1)',
+          pointColor          : 'rgba(210, 214, 222, 1)',
+          pointStrokeColor    : '#c1c7d1',
+          pointHighlightFill  : '#fff',
+          pointHighlightStroke: 'rgba(220,220,220,1)',
+          data                : <?= $chart_data; ?>,
+          fill: true,
+          backgroundColor: 'rgba(0, 123, 255, 0.2)'
+        }
+      ]
+    }
+
+    var ipsChartOptions = {
+      maintainAspectRatio : false,
+      responsive : true,
+      legend: {
+        display: false
+      },
+      scales: {
+        xAxes: [{
+          gridLines : {
+            display : false,
+          }
+        }],
+        yAxes: [{
+          gridLines : {
+            display : true,
+          },
+          ticks: {
+            beginAtZero: true,
+            max: 4.0
+          }
+        }]
+      }
+    }
+
+    // This will get the first dataset
+    var ipsChartData = ipsChartData.datasets[0]
+
+    var ipsChart = new Chart(ipsChartCanvas, {
+      type: 'line',
+      data: {
+          labels: <?= $chart_labels; ?>,
+          datasets: [ipsChartData]
+      },
+      options: ipsChartOptions
+    })
+})
+</script>
 <?= $this->endSection(); ?>
